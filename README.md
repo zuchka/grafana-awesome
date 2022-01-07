@@ -1,6 +1,6 @@
 # grafana-awesome
 
-## an awesome-style list of community-built tools for Grafana
+## an awesome-style list of tools and resources for Grafana
 
 ### backing up and searching
 
@@ -35,3 +35,8 @@
 
 - [orojina/grafana-cli](https://github.com/orojina/grafana-cli)
     - grafana-cli is a command line tool which allows you to execute actions against Grafana api server such as:
+
+### data-source specific
+
+- TK
+
