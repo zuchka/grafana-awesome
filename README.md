@@ -5,7 +5,7 @@
 ### backing up and searching
 
 - [ysde/grafana-backup-tool](https://github.com/ysde/grafana-backup-tool)
-    - A Python-based application to backup Grafana settings using the Grafana API
+    - A Python-based application to back up Grafana settings using the Grafana API
 
 - [panodata/grafana-wtf](https://github.com/panodata/grafana-wtf)
     - Grep through all Grafana entities in the spirit of git-wtf.
