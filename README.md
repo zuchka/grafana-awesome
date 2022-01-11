@@ -18,10 +18,8 @@
 
 - [ysde/grafana-backup-tool](https://github.com/ysde/grafana-backup-tool)
     - A Python-based application to back up Grafana settings using the Grafana API
-
 - [panodata/grafana-wtf](https://github.com/panodata/grafana-wtf)
     - Grep through all Grafana entities in the spirit of `git-wtf`.
-
 - [Grafana extension for Raycast](https://github.com/raycast/extensions/tree/main/extensions/grafana)
     - Search your dashboard inside [Raycast](https://www.raycast.com/).
 
@@ -35,7 +33,6 @@
 - tools
     - [Gist: how to use cURL to export all grafana dashboards to JSON](https://gist.github.com/crisidev/bd52bdcc7f029be2f295#gistcomment-3975489)
         - a years-long and still active gist thread for exporting dashboards
-
     - [nicolastakashi/gitana](https://github.com/nicolastakashi/gitana)
         - Gitana is a lightweight dashboard sync (K8s + sidecar solution)
 - resources
@@ -45,7 +42,6 @@
 
 - [IzakMarais/reporter](https://github.com/IzakMarais/reporter)
     - Service that generates a PDF report from a Grafana dashboard
-
 - [divinity666/ruby-grafana-reporter](https://github.com/divinity666/ruby-grafana-reporter)
     - Reporting Service for Grafana
 
@@ -59,26 +55,17 @@
 - tools
     - [grafana/plugin-validator](https://github.com/grafana/plugin-validator)
         - A tool for validating community plugins for publishing to Grafana.com.
-
     - [marcusolsson/grafana-plugin-support](https://github.com/marcusolsson/grafana-plugin-support)
         - This repository contains various helper functions to assist in plugin development
-
     - [grafana/plugin-workflows](https://github.com/grafana/plugin-workflows)
         - Contains a set of GitHub Action workflows for building, testing, and releasing Grafana plugins.
 - resources 
     - [grafana/grafana-plugin-repository](https://github.com/grafana/grafana-plugin-repository)
         - A good starting point for publishing a community plugin. Includes steps for submitting a plugin via the new workflow inside your Grafana Cloud account
-
-    - ["6 tips for improiving your Grafana plugin before you publish"](https://grafana.com/blog/2021/01/21/6-tips-for-improving-your-grafana-plugin-before-you-publish/)
+    - ["6 tips for improving your Grafana plugin before you publish"](https://grafana.com/blog/2021/01/21/6-tips-for-improving-your-grafana-plugin-before-you-publish/)
         - read this blog post _before_ submitting your plugin.
-
     - [grafana/sqlds](https://github.com/grafana/sqlds)
         - Most SQL-driven datasources, like `Postgres`, `MySQL`, and `MSSQL` share extremely similar codebases. The `sqlds` package is intended to remove the repetition of these datasources and centralize the datasource logic.
-
-## time and time-picker solutions
-
-- [WilliamVenner/grafana-timepicker-buttons](https://github.com/WilliamVenner/grafana-timepicker-buttons)
-    - Datasource-configured buttons panel plugin that set the time range of your Grafana dashboard
     
 ## data source specific
 
@@ -94,6 +81,10 @@
 
 - [roaldnefs/awesome-prometheus](https://github.com/roaldnefs/awesome-prometheus)
     - A curated list of awesome Prometheus resources, projects and tools.
-
 - [grafana/dashboard-linter](https://github.com/grafana/dashboard-linter)
     - Lint your dashboards for common mistakes (Prometheus data source only)
+
+## time and time-picker solutions
+
+- [WilliamVenner/grafana-timepicker-buttons](https://github.com/WilliamVenner/grafana-timepicker-buttons)
+    - Datasource-configured buttons panel plugin that set the time range of your Grafana dashboard
