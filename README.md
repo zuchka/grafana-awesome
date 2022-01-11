@@ -19,6 +19,9 @@
 - [panodata/grafana-wtf](https://github.com/panodata/grafana-wtf)
     - Grep through all Grafana entities in the spirit of `git-wtf`.
 
+- [Grafana extension for Raycast](https://github.com/raycast/extensions/tree/main/extensions/grafana)
+    - Search your dashboard inside [Raycast](https://www.raycast.com/).
+
 ## migrating grafana.db database
 
 - [grafana/database-migrator](https://github.com/grafana/database-migrator)
