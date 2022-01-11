@@ -10,6 +10,9 @@
 - [reporting](#reporting)
 - [alerting](#alerting)
 - [plugin development](#plugin-development)
+- [data source specific](#data-source-specific)
+    - [SQL databases (MySQL, MSSQL, Postgres, etc)](#sql-databases)
+    - [Prometheus](#prometheus)
 
 ## backing up and searching Grafana
 
@@ -80,6 +83,17 @@
 - [WilliamVenner/grafana-timepicker-buttons](https://github.com/WilliamVenner/grafana-timepicker-buttons)
     - Datasource-configured buttons panel plugin that set the time range of your Grafana dashboard
     
-## data-source specific
+## data source specific
 
-- TK
+### SQL databases
+
+- Grafana 8 breaking changes
+    - did you just upgrade to Grafana 8+? Did it break some of your panels that use a SQL-style DB like MySQL or Postgres? This is a thing:
+        - [read this note in the changelog](https://grafana.com/docs/grafana/latest/installation/upgrading/#postgres-mysql-microsoft-sql-server-data-sources)
+        - [read this issue comment for details and workarounds](https://github.com/grafana/grafana/issues/35534#issuecomment-861519658)
+        - try using [the `prepare-time-series` transformation](https://grafana.com/docs/grafana/latest/panels/transformations/types-options/#prepare-time-series)
+
+### Prometheus
+
+- [roaldnefs/awesome-prometheus](https://github.com/roaldnefs/awesome-prometheus)
+    - A curated list of awesome Prometheus resources, projects and tools.
