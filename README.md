@@ -32,17 +32,14 @@
 
 ## dashboards-as-code or dashboard syncing
 
-### tools
+- tools
+    - [Gist: how to use cURL to export all grafana dashboards to JSON](https://gist.github.com/crisidev/bd52bdcc7f029be2f295#gistcomment-3975489)
+        - a years-long and still active gist thread for exporting dashboards
 
-- [Gist: how to use cURL to export all grafana dashboards to JSON](https://gist.github.com/crisidev/bd52bdcc7f029be2f295#gistcomment-3975489)
-    - a years-long and still active gist thread for exporting dashboards
-
-- [nicolastakashi/gitana](https://github.com/nicolastakashi/gitana)
-    - Gitana is a lightweight dashboard sync (K8s + sidecar solution)
-
-### resources
-
-- CUE and the future of dashboards as code
+    - [nicolastakashi/gitana](https://github.com/nicolastakashi/gitana)
+        - Gitana is a lightweight dashboard sync (K8s + sidecar solution)
+- resources
+    - CUE and the future of dashboards as code / grafana + gitops
 
 ## reporting
 
@@ -59,24 +56,24 @@
 
 ## plugin development
 
-### resources
+- tools
+    - [grafana/plugin-validator](https://github.com/grafana/plugin-validator)
+        - A tool for validating community plugins for publishing to Grafana.com.
 
-- [grafana/grafana-plugin-repository](https://github.com/grafana/grafana-plugin-repository)
-    - A good starting point for publishing a community plugin. Includes steps for submitting a plugin via the new workflow inside your Grafana Cloud account
+    - [marcusolsson/grafana-plugin-support](https://github.com/marcusolsson/grafana-plugin-support)
+        - This repository contains various helper functions to assist in plugin development
 
-- ["6 tips for improiving your Grafana plugin before you publish"](https://grafana.com/blog/2021/01/21/6-tips-for-improving-your-grafana-plugin-before-you-publish/)
-    - read this blog post _before_ submitting your plugin.
+    - [grafana/plugin-workflows](https://github.com/grafana/plugin-workflows)
+        - Contains a set of GitHub Action workflows for building, testing, and releasing Grafana plugins.
+- resources 
+    - [grafana/grafana-plugin-repository](https://github.com/grafana/grafana-plugin-repository)
+        - A good starting point for publishing a community plugin. Includes steps for submitting a plugin via the new workflow inside your Grafana Cloud account
 
-### tools
+    - ["6 tips for improiving your Grafana plugin before you publish"](https://grafana.com/blog/2021/01/21/6-tips-for-improving-your-grafana-plugin-before-you-publish/)
+        - read this blog post _before_ submitting your plugin.
 
-- [grafana/plugin-validator](https://github.com/grafana/plugin-validator)
-    - A tool for validating community plugins for publishing to Grafana.com.
-
-- [marcusolsson/grafana-plugin-support](https://github.com/marcusolsson/grafana-plugin-support)
-    - This repository contains various helper functions to assist in plugin development
-
-- [grafana/plugin-workflows](https://github.com/grafana/plugin-workflows)
-    - Contains a set of GitHub Action workflows for building, testing, and releasing Grafana plugins.
+    - [grafana/sqlds](https://github.com/grafana/sqlds)
+        - Most SQL-driven datasources, like `Postgres`, `MySQL`, and `MSSQL` share extremely similar codebases. The `sqlds` package is intended to remove the repetition of these datasources and centralize the datasource logic.
 
 ## time and time-picker solutions
 
@@ -85,9 +82,9 @@
     
 ## data source specific
 
-### SQL databases
+### SQL data sources
 
-- Grafana 8 breaking changes
+- Grafana 8 breaking changes to SQL-driven data sources
     - did you just upgrade to Grafana 8+? Did it break some of your panels that use a SQL-style DB like MySQL or Postgres? This is a thing:
         - [read this note in the changelog](https://grafana.com/docs/grafana/latest/installation/upgrading/#postgres-mysql-microsoft-sql-server-data-sources)
         - [read this issue comment for details and workarounds](https://github.com/grafana/grafana/issues/35534#issuecomment-861519658)
@@ -97,3 +94,6 @@
 
 - [roaldnefs/awesome-prometheus](https://github.com/roaldnefs/awesome-prometheus)
     - A curated list of awesome Prometheus resources, projects and tools.
+
+- [grafana/dashboard-linter](https://github.com/grafana/dashboard-linter)
+    - Lint your dashboards for common mistakes (Prometheus data source only)
