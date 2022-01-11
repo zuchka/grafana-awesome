@@ -10,8 +10,8 @@
 - [reporting](#reporting)
 - [alerting](#alerting)
 - [plugin development](#plugin-development)
-- [SQL data sources (MySQL, MSSQL, Postgres, etc)](#sql-databases)
-- [Prometheus data source](#prometheus)
+- [SQL data sources (MySQL, MSSQL, Postgres, etc)](#sql-driven-data-sources)
+- [Prometheus data source](#prometheus-data-source)
 
 ## tools
 
