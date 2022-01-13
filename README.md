@@ -152,3 +152,7 @@
 #### [WilliamVenner/grafana-timepicker-buttons](https://github.com/WilliamVenner/grafana-timepicker-buttons)
 
 - Datasource-configured buttons panel plugin that set the time range of your Grafana dashboard
+
+#### [panodata/grafanimate](https://github.com/panodata/grafanimate)
+
+- Tool for creating animations of your time-series by capturing screenshots while stepping through time.
