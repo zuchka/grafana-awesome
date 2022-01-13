@@ -2,13 +2,15 @@
 
 > an awesome-style list of tools and resources for Grafana
 
+note: this is a work in progress--PRs are encouraged!
+
 ## contents
 
 - [admin tasks](#admin-tasks)
     - [backing up Grafana settings](#backing-up-grafana)
     - [searching Grafana](#searching-grafana)
     - [migrating the grafana.db database](#migrating-the-grafanadb-database)
-    - [exporting and syncing dashboards (as-code)](#dashboards-as-code-or-dashboard-syncing)
+    - [exporting and syncing dashboards (as-code)](#dashboard-exporting--syncing)
     - [reporting](#reporting)
 - user essentials
     - templating & variables
@@ -30,6 +32,7 @@
     - Azure Monitor
     - Zabbix
 - visualizations
+    - how to mock up data in Grafana
 - networking
 - other
 
@@ -67,6 +70,10 @@
 #### [nicolastakashi/gitana](https://github.com/nicolastakashi/gitana)
 
 - Gitana is a lightweight dashboard sync (K8s + sidecar solution)
+
+#### [netsage-project/gdg](https://github.com/netsage-project/gdg)
+
+- Grafana Dash-n-Grab (GDG) -- a CLI to backup and restore dashboards and datasources.
 
 ### reporting
 
