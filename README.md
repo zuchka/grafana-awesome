@@ -122,7 +122,7 @@ note: this is a work in progress--PRs are encouraged!
 
 ## data sources
 
-> resources for specific data source plugins
+> data source plugins, exporters, REST APIs, and other get-my-data-into-Grafana solutions
 
 ### SQL-driven data sources
 
@@ -145,6 +145,14 @@ note: this is a work in progress--PRs are encouraged!
 #### [grafana/dashboard-linter](https://github.com/grafana/dashboard-linter)
 
 - Lint your dashboards for common mistakes (Prometheus data source only)
+
+### Python, Pandas, & Data Analysis
+
+#### [panodata/grafana-pandas-datasource](https://github.com/panodata/grafana-pandas-datasource)
+
+- connect Python's greatest data analysis library to Grafana. `grafana-pandas-datasource` is a REST API based on Flask for serving Pandas Dataframes to Grafana. This way, a native Python application can supply data to Grafana both easily and powerfully. 
+
+[Originally based on this gist by @linar-jether](https://gist.github.com/linar-jether/95ff412f9d19fdf5e51293eb0c09b850)
 
 ## other resources
 
