@@ -4,7 +4,7 @@
 
 note: this is a work in progress--PRs are encouraged!
 
-## contents
+## CONTENTS
 
 - [admin tasks](#admin-tasks)
     - [backing up Grafana settings](#backing-up-grafana)
@@ -12,31 +12,20 @@ note: this is a work in progress--PRs are encouraged!
     - [migrating the grafana.db database](#migrating-the-grafanadb-database)
     - [exporting and syncing dashboards (as-code)](#dashboard-exporting--syncing)
     - [reporting](#reporting)
-- user essentials
-    - templating & variables
-    - data links
 - [alerting](#alerting)
     - unified alerting
     - legacy alerting
 - [plugin development](#plugin-development)
-    - building
-    - signing
-    - publishing
-- datasources
+    - [building](#building)
+    - [signing](#signing)
+    - [publishing](#publishing)
+- [data sources](#data-sources)
     - [SQL data sources (MySQL, MSSQL, Postgres, etc)](#sql-driven-data-sources)
     - [Prometheus data source](#prometheus-data-source)
-    - Loki
-    - InfluxDB
-    - ElasticSearch
-    - Cloudwatch
-    - Azure Monitor
-    - Zabbix
-- visualizations
-    - how to mock up data in Grafana
-- networking
-- other
+    - [Python, Pandas, & Data Analysis](#python-pandas--data-analysis)
+- [other](#other)
 
-## admin tasks
+## ADMIN TASKS
 
 > resources for common admin tasks like migrating the Grafana db, syncing dashboards, and generating reports
 
@@ -82,7 +71,7 @@ note: this is a work in progress--PRs are encouraged!
 - [divinity666/ruby-grafana-reporter](https://github.com/divinity666/ruby-grafana-reporter)
     - Reporting Service for Grafana
 
-## alerting
+## ALERTING
 
 > resources for legacy alerting and the new unified alerting (Grafana 8+)
 ### legacy alerting
@@ -92,7 +81,7 @@ note: this is a work in progress--PRs are encouraged!
 
 ### unified alerting
 
-## plugin development
+## PLUGIN DEVELOPMENT
 > resources for building, signing, and publishing Grafana Plugins
 
 ### building
@@ -120,7 +109,7 @@ note: this is a work in progress--PRs are encouraged!
 
 - A good starting point for publishing a community plugin. Includes steps for submitting a plugin via the new workflow inside your Grafana Cloud account
 
-## data sources
+## DATA SOURCES
 
 > data source plugins, exporters, REST APIs, and other get-my-data-into-Grafana solutions
 
@@ -152,9 +141,9 @@ note: this is a work in progress--PRs are encouraged!
 
 - connect Python's greatest data analysis library to Grafana. `grafana-pandas-datasource` is a REST API based on Flask for serving Pandas Dataframes to Grafana. This way, a native Python application can supply data to Grafana both easily and powerfully. 
 
-[Originally based on this gist by @linar-jether](https://gist.github.com/linar-jether/95ff412f9d19fdf5e51293eb0c09b850)
+- [Originally based on this gist by @linar-jether](https://gist.github.com/linar-jether/95ff412f9d19fdf5e51293eb0c09b850)
 
-## other resources
+## OTHER RESOURCES
 
 ### IoT, home lab, & maker solutions
 
