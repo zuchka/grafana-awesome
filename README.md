@@ -48,13 +48,14 @@ note: this is a work in progress--PRs are encouraged!
 ### examples   
 
 - #### [play.grafana.org](TK)
-    - description
+    - grafana's public sandbox. a great place to try out features or mock up a problem.
 
-- #### [grafana/fundamentals](tk)
-    - a batteries-inluded sample web application + grafana + loki + prometheus. Deploy everything with a single `docker-compose up`(tk). And don't forget to try the companion fundamentals tutorial.
+- #### [grafana/tutorial-environment](https://github.com/grafana/tutorial-environment)
+    - a batteries-inluded sample web application + grafana + loki + prometheus. Deploy everything with a single `docker-compose up`. And don't forget to try [the companion "Fundamentals" tutorial](https://grafana.com/tutorials/grafana-fundamentals/).
 
 
 ### templates
+
 - #### [title](TK)
     - description
 
