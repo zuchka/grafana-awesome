@@ -2,7 +2,9 @@
 
 > an awesome-style list of tools and resources for Grafana
 
-## contents
+note: this is a work in progress--PRs are encouraged!
+
+## CONTENTS
 
 - [quickstarting Grafana](#quickstarting-grafana)
     - [examples](#examples)
@@ -13,14 +15,11 @@
     - [backing up Grafana settings](#backing-up-grafana)
     - [searching Grafana](#searching-grafana)
     - [migrating the grafana.db database](#migrating-the-grafanadb-database)
-    - [exporting and syncing dashboards (as-code)](#dashboards-as-code-or-dashboard-syncing)
+    - [exporting and syncing dashboards (as-code)](#dashboard-exporting--syncing)
     - [reporting](#reporting)
-- user essentials
-    - templating & variables
-    - data links
 - [alerting](#alerting)
-    - unified alerting
-    - legacy alerting
+    - [unified alerting](#unified-alerting)
+    - [legacy alerting](#legacy-alerting)
 - [plugin development](#plugin-development)
     - building
     - signing
@@ -37,8 +36,9 @@
 - [visualizations](#visualizations)
     - [table panel](#table-panel)
         - [how to fix the gauges inside the table panel](https://github.com/grafana/grafana/issues/40926#issuecomment-957202015)
-- networking
-- other
+- [networking](#networking)
+    - [reverse proxies](#reverse-proxies)
+- [other](#other-resources)
 
 ## <u>quickstarting Grafana</u>
 
@@ -81,14 +81,17 @@
 ### backing up Grafana
 
 - #### [ysde/grafana-backup-tool](https://github.com/ysde/grafana-backup-tool)
+    
     - A Python-based application to back up Grafana settings using the Grafana API
 
 ### searching Grafana
 
 - #### [panodata/grafana-wtf](https://github.com/panodata/grafana-wtf)
+
     - Grep through all Grafana entities in the spirit of `git-wtf`.
 
 - #### [Grafana extension for Raycast](https://github.com/raycast/extensions/tree/main/extensions/grafana)
+
     - Search your dashboard inside [Raycast](https://www.raycast.com/).
 
 ### migrating the grafana.db database
@@ -99,10 +102,16 @@
 ### dashboard exporting & syncing
 
 - #### [how to use cURL to export all grafana dashboards to JSON](https://gist.github.com/crisidev/bd52bdcc7f029be2f295#gistcomment-3975489)
+
     - a years-long and still active gist thread for exporting dashboards
 
 - #### [nicolastakashi/gitana](https://github.com/nicolastakashi/gitana)
+
     - Gitana is a lightweight dashboard sync (K8s + sidecar solution)
+
+- #### [netsage-project/gdg](https://github.com/netsage-project/gdg)
+
+    - Grafana Dash-n-Grab (GDG) -- a CLI to backup and restore dashboards and datasources.
 
 ### reporting
 
@@ -159,9 +168,9 @@
 
 ## <u>data sources</u>
 
-> resources for specific data source plugins
+> data source plugins, exporters, REST APIs, and other get-my-data-into-Grafana solutions
 
-### SQL-driven data sources
+### SQL-driven data source plugins
 
 - #### [grafana/sqlds](https://github.com/grafana/sqlds)
     - Most SQL-driven datasources, like `Postgres`, `MySQL`, and `MSSQL` share extremely similar codebases. The `sqlds` package is intended to remove the repetition of these datasources and centralize the datasource logic.
@@ -171,13 +180,30 @@
     - [read this issue comment for details and workarounds](https://github.com/grafana/grafana/issues/35534#issuecomment-861519658)
     - try using [the `prepare-time-series` transformation](https://grafana.com/docs/grafana/latest/panels/transformations/types-options/#prepare-time-series)
 
-### Prometheus data source
+- #### [just upgraded to Grafana 8+?](https://grafana.com/docs/grafana/latest/installation/upgrading/#postgres-mysql-microsoft-sql-server-data-sources) 
+    - Did it break some panels that use a SQL-driven DB like MySQL or Postgres? This is a known breaking change:
+
+    - [read this note in the changelog](https://grafana.com/docs/grafana/latest/installation/upgrading/#postgres-mysql-microsoft-sql-server-data-sources)
+    - [read this issue comment for details and workarounds](https://github.com/grafana/grafana/issues/35534#issuecomment-861519658)
+    - try using [the `prepare-time-series` transformation](https://grafana.com/docs/grafana/latest/panels/transformations/types-options/#prepare-time-series)
+
+### Prometheus data source plugin
 
 - #### [roaldnefs/awesome-prometheus](https://github.com/roaldnefs/awesome-prometheus)
+
     - A curated list of awesome Prometheus resources, projects and tools.
 
 - #### [grafana/dashboard-linter](https://github.com/grafana/dashboard-linter)
+
     - Lint your dashboards for common mistakes (Prometheus data source only)
+
+### Python, Pandas, & Data Analysis
+
+- #### [panodata/grafana-pandas-datasource](https://github.com/panodata/grafana-pandas-datasource)
+
+    - connect Python's greatest data analysis library to Grafana. `grafana-pandas-datasource` is a REST API based on Flask for serving Pandas Dataframes to Grafana. This way, a native Python application can supply data to Grafana both easily and powerfully. 
+
+    - [Originally based on this gist by @linar-jether](https://gist.github.com/linar-jether/95ff412f9d19fdf5e51293eb0c09b850)
 
 ## <u>visualizations</u>
 
@@ -186,6 +212,13 @@
 - #### [[how to fix the gauges inside the table panel](https://github.com/grafana/grafana/issues/40926#issuecomment-957202015)]
 
 ### timeseries panel
+
+## <u>networking</u>
+
+### reverse proxies
+
+- #### [Reverse Proxy change in 8.3.5](https://github.com/grafana/grafana/issues/45117#issuecomment-1033842787)
+    - the new header setting for reverse proxies for 8.3.5+. Did upgrading to 8.3.5+ break your grafana? Is your grafana behind a reverse proxy? Check out this issue.
 
 ## <u>other resources</u>
 
@@ -197,7 +230,10 @@
 ### time and time-picker solutions
 
 - #### [WilliamVenner/grafana-timepicker-buttons](https://github.com/WilliamVenner/grafana-timepicker-buttons)
+
     - Datasource-configured buttons panel plugin that set the time range of your Grafana dashboard
 
-- #### [title](TK)
-    - the new header setting for reverse proxies for 8.3.5+. Did upgrading to 8.3.5+ break your grafana? Is your grafana behind a reverse proxy? Check out this issue.
+- #### [panodata/grafanimate](https://github.com/panodata/grafanimate)
+
+    - Tool for creating animations of your time-series by capturing screenshots while stepping through time.
+
