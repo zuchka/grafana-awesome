@@ -103,23 +103,24 @@ note: this is a work in progress--PRs are encouraged!
 ### dashboard exporting & syncing
 
 - #### [how to use cURL to export all grafana dashboards to JSON](https://gist.github.com/crisidev/bd52bdcc7f029be2f295#gistcomment-3975489)
-
     - a years-long and still active gist thread for exporting dashboards
 
 - #### [nicolastakashi/gitana](https://github.com/nicolastakashi/gitana)
-
     - Gitana is a lightweight dashboard sync (K8s + sidecar solution)
 
 - #### [netsage-project/gdg](https://github.com/netsage-project/gdg)
-
     - Grafana Dash-n-Grab (GDG) -- a CLI to backup and restore dashboards and datasources.
 
 ### reporting
 
-- [IzakMarais/reporter](https://github.com/IzakMarais/reporter)
+- #### [IzakMarais/reporter](https://github.com/IzakMarais/reporter)  
     - Service that generates a PDF report from a Grafana dashboard
-- [divinity666/ruby-grafana-reporter](https://github.com/divinity666/ruby-grafana-reporter)
+
+- #### [divinity666/ruby-grafana-reporter](https://github.com/divinity666/ruby-grafana-reporter)   
     - Reporting Service for Grafana
+
+- #### [panodata/grafanimate](https://github.com/panodata/grafanimate)  
+    - Tool for creating animations of your time-series by capturing screenshots while stepping through time.
 
 ## <u>alerting</u>
 > resources for legacy alerting and the new unified alerting (Grafana 8+)
@@ -176,11 +177,6 @@ note: this is a work in progress--PRs are encouraged!
 - #### [grafana/sqlds](https://github.com/grafana/sqlds)
     - Most SQL-driven datasources, like `Postgres`, `MySQL`, and `MSSQL` share extremely similar codebases. The `sqlds` package is intended to remove the repetition of these datasources and centralize the datasource logic.
 
-- #### [just upgraded to Grafana 8+?](https://grafana.com/docs/grafana/latest/installation/upgrading/#postgres-mysql-microsoft-sql-server-data-sources) Did it break some panels that use a SQL-driven DB like MySQL or Postgres? This is a known breaking change:
-    - [read this note in the changelog](https://grafana.com/docs/grafana/latest/installation/upgrading/#postgres-mysql-microsoft-sql-server-data-sources)
-    - [read this issue comment for details and workarounds](https://github.com/grafana/grafana/issues/35534#issuecomment-861519658)
-    - try using [the `prepare-time-series` transformation](https://grafana.com/docs/grafana/latest/panels/transformations/types-options/#prepare-time-series)
-
 - #### [just upgraded to Grafana 8+?](https://grafana.com/docs/grafana/latest/installation/upgrading/#postgres-mysql-microsoft-sql-server-data-sources) 
     - Did it break some panels that use a SQL-driven DB like MySQL or Postgres? This is a known breaking change:
 
@@ -233,8 +229,3 @@ note: this is a work in progress--PRs are encouraged!
 - #### [WilliamVenner/grafana-timepicker-buttons](https://github.com/WilliamVenner/grafana-timepicker-buttons)
 
     - Datasource-configured buttons panel plugin that set the time range of your Grafana dashboard
-
-- #### [panodata/grafanimate](https://github.com/panodata/grafanimate)
-
-    - Tool for creating animations of your time-series by capturing screenshots while stepping through time.
-
