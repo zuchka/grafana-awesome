@@ -12,6 +12,7 @@ note: this is a work in progress--PRs are encouraged!
     - [migrating the grafana.db database](#migrating-the-grafanadb-database)
     - [exporting and syncing dashboards (as-code)](#dashboard-exporting--syncing)
     - [reporting](#reporting)
+    - [auth](#auth)
 - [alerting](#alerting)
     - [unified alerting](#unified-alerting)
     - [legacy alerting](#legacy-alerting)
@@ -71,6 +72,10 @@ note: this is a work in progress--PRs are encouraged!
     - Service that generates a PDF report from a Grafana dashboard
 - [divinity666/ruby-grafana-reporter](https://github.com/divinity666/ruby-grafana-reporter)
     - Reporting Service for Grafana
+
+### auth
+
+- [How to configure Auth0 and Grafana](https://cyral.com/blog/how-to-grafana-auth0/), by Kaizen Towfiq 
 
 ## ALERTING
 
