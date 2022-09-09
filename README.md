@@ -120,18 +120,12 @@ note: this is a work in progress--PRs are encouraged!
 - #### [divinity666/ruby-grafana-reporter](https://github.com/divinity666/ruby-grafana-reporter)   
     - Reporting Service for Grafana
 
-<<<<<<< HEAD
-### auth
+- ### auth
 
 - [How to configure Auth0 and Grafana](https://cyral.com/blog/how-to-grafana-auth0/), by Kaizen Towfiq 
 
 ## ALERTING
-=======
-- #### [panodata/grafanimate](https://github.com/panodata/grafanimate)  
-    - Tool for creating animations of your time-series by capturing screenshots while stepping through time.
->>>>>>> f8cf9ea9878e779c789a0a29346f3eeb94dd32a3
 
-## <u>alerting</u>
 > resources for legacy alerting and the new unified alerting (Grafana 8+)
 
 ### unified alerting
@@ -229,6 +223,9 @@ note: this is a work in progress--PRs are encouraged!
 ## <u>other resources</u>
 
 ### IoT, home lab, & maker solutions
+
+- #### [panodata/grafanimate](https://github.com/panodata/grafanimate)  
+    - Tool for creating animations of your time-series by capturing screenshots while stepping through time.
 
 - #### [grafana/prometheus-arduino](https://github.com/grafana/prometheus-arduino)
     - An Arduino library for sending prometheus metrics directly to a Prometheus remote write endpoint.
