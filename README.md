@@ -6,6 +6,8 @@ NOTE: this is a work in progress--PRs are encouraged!
 
 NOTE: we've migrated from a clunky README list to a proper WIKI. Check it out!
 
+LAST NOTE: I've archived this repo! I don't have the time to maintain it anymore. Fork me and take it over, will ya?
+
 https://github.com/zuchka/grafana-awesome/wiki
 
 ## Wiki Categories
